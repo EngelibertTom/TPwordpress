@@ -1,10 +1,18 @@
 <?php
-add_action('after_setup_theme', function() {
-    add_theme_support( 'title-tag' );
-});
 
 define('DS', DIRECTORY_SEPARATOR);
-require dirname(__FILE__) . DS . 'inc' . DS . 'assets.php';
+
+$core_inc = [
+    'assets',
+    'menus',
+
+];
+
+foreach ($core_inc as $file) {
+    require dirname(__FILE__) . DS . 'inc' . DS . $file . '.php';
+}
+
+
 
 
 
