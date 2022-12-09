@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE HTML>
+<html>
 <head>
-    coucou
-    
-
+    <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+    <?php wp_head() ?>
 </head>
-<?php wp_head(); ?>
-<body>
-    <?php wp_body_open(); ?>
-    
-    test
+<body <?php body_class();?>>
