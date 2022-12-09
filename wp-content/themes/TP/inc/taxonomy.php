@@ -9,16 +9,16 @@ add_action('init', function () {
     ]);
     register_taxonomy('région/département', 'offres', [
         'labels' => [
-            'name' => 'Types de projet',
-            'singular_name' => 'Type de projet',
+            'name' => 'Régions/Département',
+            'singular_name' => 'Régions/Département',
         ],
         'hierarchical' => true,
     ]);
 
     register_taxonomy('niveau', 'offres', [
         'labels' => [
-            'name' => 'Clients',
-            'singular_name' => 'Client',
+            'name' => 'Niveau',
+            'singular_name' => 'Niveau',
         ],
         'hierarchical' => true,
     ]);
