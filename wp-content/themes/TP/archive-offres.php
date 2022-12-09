@@ -4,7 +4,6 @@
         <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail('thumbnail'); ?>
         <?php endif; ?>
-        <h1><?php the_title(); ?></h1>
         <a href="<?php the_permalink();?>"><h1><?php the_title(); ?></h1></a> <!--rechercher pour permalink-->
 
     </article>
