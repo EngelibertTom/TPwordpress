@@ -5,7 +5,8 @@ define('DS', DIRECTORY_SEPARATOR);
 $core_inc = [
     'assets',
     'menus',
-    'post_types'
+    'post_types',
+    'taxonomy',
 
 ];
 
