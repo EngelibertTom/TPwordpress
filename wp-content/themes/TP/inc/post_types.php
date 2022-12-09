@@ -7,6 +7,6 @@ add_action('init', function () {
         ],
         'public' => true,
         'has_archive' => true,
-        'supports' => ['title', 'editor', 'thumbnail'],
+        'supports' => ['title', 'editor', 'excerpt','thumbnail'],
     ]);
 });
